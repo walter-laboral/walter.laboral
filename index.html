@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<link href="./estilo/bootstrap.min.css" rel="stylesheet">
+
+<script src="./script/control.js" defer=""></script>
+
+</head>
+
+
+<body>
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-teal" name="myForm" action = "index.html" onsubmit="return validateForm()" method="post">
+          <h3 class="text-white">Usuario y Contraseña</h3>
+          <div class="form-floating mb-3">
+            <input type="email" name="fname" class="form-control" id="floatingInput" placeholder="Usuario">
+            <label for="floatingInput">Nombre de Usuario</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" name="pwd" minlength="8" class="form-control" id="floatingPassword" placeholder="Contraseña">
+            <label for="floatingPassword">Contraseña</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-dark" type="submit">Enviar</button>
+          <hr class="my-4">
+        </form>
+<div class="container">
+  <div class="justify-content-center">
+          <h6 id="mensaje"></h6>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
